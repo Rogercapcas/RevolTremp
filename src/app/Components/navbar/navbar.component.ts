@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor( private router: Router) {
   }
 
+  ngOnInit(): void {
+
+  public goTo(url) {
+    this.router.navigate([url]).then( (e) => {
+      if (e) {
+        console.log('Navigate successful!');
+      } else {
+        console.log('Navigate fail!');
+      }
+    });
+  }
 }
