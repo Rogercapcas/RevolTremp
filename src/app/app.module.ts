@@ -8,6 +8,8 @@ import {RouterModule} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+// import {JwtInterceptor} from './_helpers/jwt.interceptor';
+// import {ErrorInterceptor} from './_helpers/error.interceptor';
 
 @NgModule({
   declarations: [
@@ -24,14 +26,10 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
     HttpClientModule,
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: this.JwtInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: this.ErrorInterceptor, multi: true },
-
-    // provider used to create fake backend
-    (this.fakeBackendProvider)],
+    // { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    // { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  private static JwtInterceptor: any;
-  private static ErrorInterceptor: any;
 }
