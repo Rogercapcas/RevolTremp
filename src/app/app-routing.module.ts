@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
+import { WelcomepageComponent} from './Components/welcomepage/welcomepage.component';
 
 const routes: Routes = [
-  {path: '', component: }
+  {path: 'welcome', component: WelcomepageComponent},
 ];
 
 // @ts-ignore
@@ -11,4 +12,6 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 
-export class AppRoutingModule {}
+export class AppRoutingModule {
+
+}

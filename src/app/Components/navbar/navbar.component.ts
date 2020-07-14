@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+/*
   public goTo(url) {
     this.router.navigate([url]).then( (e) => {
       if (e) {
@@ -20,6 +20,6 @@ export class NavbarComponent implements OnInit {
       } else {
         console.log('Navigate fail!');
       }
-    });
+    });*/
   }
 }
