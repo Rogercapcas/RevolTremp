@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.customh1 {
+  font-family: cursive;
+  font-size: 33px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 33px;
+  color: white;
+}
+
+.customh3 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 33px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 33px;
+}
+
+.paperbackground {
+  background-image: url("./app/resources/img2.jpg");
+}

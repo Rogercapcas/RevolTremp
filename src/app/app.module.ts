@@ -8,6 +8,7 @@ import {RouterModule} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import { CalendarComponent } from './Components/calendar/calendar.component';
 // import {JwtInterceptor} from './_helpers/jwt.interceptor';
 // import {ErrorInterceptor} from './_helpers/error.interceptor';
 
@@ -15,7 +16,8 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
   declarations: [
     AppComponent,
     NavbarComponent,
-    WelcomepageComponent
+    WelcomepageComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
