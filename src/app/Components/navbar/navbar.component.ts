@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router} from '@angular/router';
+import {Edition} from '../../Models/edition';
+import {EditionsComponent} from '../editions/editions.component';
+import {EditionsService} from '../../services/editions.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +10,13 @@ import { Router} from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor( private router: Router) {
+  editions: Edition[];
+  selectedEdition: Edition;
+  constructor( private router: Router, private editionsService: EditionsService) {
   }
 
   ngOnInit(): void {
+    this.getEditions();
 /*
   public goTo(url) {
     this.router.navigate([url]).then( (e) => {
@@ -21,5 +26,13 @@ export class NavbarComponent implements OnInit {
         console.log('Navigate fail!');
       }
     });*/
+  }
+
+  onSelect(edition: Edition): void{
+    this.selectedEdition = edition;
+  }
+
+  getEditions(): void{
+    this.editions = this.editionsService.getEditions();
   }
 }

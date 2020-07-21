@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.customh1 {
+  font-family: cursive;
+  font-size: 33px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 33px;
+  color: black;
+}
+
 .whitecustomh1 {
   font-family: cursive;
   font-size: 33px;
@@ -7,6 +17,16 @@
   font-weight: bold;
   line-height: 33px;
   color: white;
+}
+
+.customh3 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 33px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 33px;
+  color: black;
 }
 
 .whitecustomh3 {
@@ -18,15 +38,6 @@
   line-height: 33px;
 }
 
-.customh1 {
-  font-family: cursive;
-  font-size: 33px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  line-height: 33px;
-  color: black;
-}
 .custom1 {
   font-family: cursive;
   font-size: 23px;
