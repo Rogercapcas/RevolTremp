@@ -22,7 +22,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a *ngFor="let edition of editions"
              [class.selected]="edition===selectedEdition"
-             (click)="onSelect(edition)" class="dropdown-item" href="editions" > {{edition.year}}</a>
+             (click)="onSelect(edition)" class="dropdown-item"  [routerLink]="['editions']" [state]="{editionx:edition}"> {{edition.year}}</a>
           <!--<a class="dropdown-item" href="#">2019</a>
           <a class="dropdown-item" href="#">2020</a>
           <div class="dropdown-divider"></div>

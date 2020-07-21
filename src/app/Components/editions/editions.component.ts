@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Edition} from '../../Models/edition';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-editions',
@@ -7,11 +8,20 @@ import {Edition} from '../../Models/edition';
   styleUrls: ['./editions.component.css']
 })
 export class EditionsComponent implements OnInit {
-  @Input() edition: Edition;
+  edition: Edition;
+  /*private activation: any;*/
 
-  constructor() { }
+  constructor() {
+  }
+  /*constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+    console.log(this.router.getCurrentNavigation().extras.state);
+  }*/
 
   ngOnInit(): void {
+    /*console.log(this.router.getCurrentNavigation().extras.state);
+    this.activation.data.subscribe(editionx => {
+      this.edition = editionx;
+    });*/
   }
 
 }
