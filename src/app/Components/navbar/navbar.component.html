@@ -15,7 +15,11 @@
       <li class="nav-item active">
         <a class="nav-link" href="calendar">Agenda</a>
       </li>
-      <li class="nav-item dropdown active">
+      <li class="nav-item active">
+        <a class="nav-link" href="editions">Edicions</a>
+      </li>
+      <!-- Next section is just disabled cause I don't know how to pass an Edition throwgh a href-->
+      <!--<li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Edicions
         </a>
@@ -23,12 +27,12 @@
           <a *ngFor="let edition of editions"
              [class.selected]="edition===selectedEdition"
              (click)="onSelect(edition)" class="dropdown-item"  [routerLink]="['editions']" [state]="{editionx:edition}"> {{edition.year}}</a>
-          <!--<a class="dropdown-item" href="#">2019</a>
+          <a class="dropdown-item" href="#">2019</a>
           <a class="dropdown-item" href="#">2020</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Col·laboradors</a>-->
+          <a class="dropdown-item" href="#">Col·laboradors</a>
         </div>
-      </li>
+      </li>-->
     </ul>
   </div>
 </nav>
