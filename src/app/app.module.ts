@@ -10,6 +10,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { CalendarComponent } from './Components/calendar/calendar.component';
 import { EditionsComponent } from './Components/editions/editions.component';
+import { HistoryComponent } from './Components/history/history.component';
 // import {JwtInterceptor} from './_helpers/jwt.interceptor';
 // import {ErrorInterceptor} from './_helpers/error.interceptor';
 
@@ -19,7 +20,8 @@ import { EditionsComponent } from './Components/editions/editions.component';
     NavbarComponent,
     WelcomepageComponent,
     CalendarComponent,
-    EditionsComponent
+    EditionsComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

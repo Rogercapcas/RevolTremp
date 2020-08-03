@@ -48,6 +48,24 @@
   color: white;
 }
 
+.custom3 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 23px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 23px;
+  color: black;
+}
+.text-margins{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.text-margins2{
+  margin-left: 20px;
+}
+
 .paperbackground {
   background-image: url("src/assets/resources/img4.jpg");
 }
