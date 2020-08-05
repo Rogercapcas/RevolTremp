@@ -11,6 +11,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { CalendarComponent } from './Components/calendar/calendar.component';
 import { EditionsComponent } from './Components/editions/editions.component';
 import { HistoryComponent } from './Components/history/history.component';
+import { ColaboradorsComponent } from './Components/colaboradors/colaboradors.component';
 // import {JwtInterceptor} from './_helpers/jwt.interceptor';
 // import {ErrorInterceptor} from './_helpers/error.interceptor';
 
@@ -21,7 +22,8 @@ import { HistoryComponent } from './Components/history/history.component';
     WelcomepageComponent,
     CalendarComponent,
     EditionsComponent,
-    HistoryComponent
+    HistoryComponent,
+    ColaboradorsComponent
   ],
   imports: [
     BrowserModule,
